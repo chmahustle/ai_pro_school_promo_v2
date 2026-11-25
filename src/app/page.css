@@ -12,7 +12,6 @@
 @media(max-width:760px){html{scroll-padding-top:78px}.wrap{width:min(100% - 32px,600px)}.nav-row{min-height:68px;gap:10px}.brand-icon{height:39px;width:39px;font-size:29px;border-radius:11px}.brand-name{font-size:21px}.nav-items,.nav-row>.btn{display:none}.menu{display:flex}.mobile-menu.open{display:block}.hero{padding:38px 0 53px}.hero-layout{display:block}.hero h1{font-size:clamp(38px,8.1vw,58px);line-height:1.09;margin:18px 0 17px}.hero-lead{font-size:15px;line-height:1.62}.hero-chips{gap:7px;margin-bottom:24px}.chip{font-size:10px;padding:8px 10px}.hero-cta .btn{width:100%;min-height:58px}.hero-price{font-size:24px}.hero-cta{justify-content:space-between;gap:13px}.hero-disclaimer{font-size:10px}.hero-art{height:380px;min-height:0;max-width:405px;margin:33px auto 0;transform:none}.hero-card-1{height:285px;top:40px}.hero-card-2{height:222px;top:105px}.hero-card-3{height:185px;bottom:2px}.art-bubble{padding:9px 10px;font-size:10px}.art-bubble.top{top:0}.art-bubble.bottom{bottom:0}.proof-grid{grid-template-columns:repeat(2,1fr)}.proof-cell:nth-child(2){border-right:0}.proof-cell:nth-child(-n+2){border-bottom:1px solid #eeeef2}.proof-cell{padding:15px 10px}.proof-cell strong{font-size:24px}.proof-cell span{font-size:11px}.section{padding:62px 0}.panel{border-radius:23px;padding:24px 18px}.section-header{gap:11px;margin-bottom:21px}.section-headline{font-size:clamp(29px,7.1vw,42px);letter-spacing:-.06em}.section-description{font-size:13px}.intro-section{padding-top:55px;padding-bottom:16px}.proof-section{padding:10px 0 18px}.story-section{padding:10px 0 62px}.carousel-rail{gap:11px;margin-right:-18px;padding-right:25px}.media-tile,.example-rail .media-tile{width:44%;aspect-ratio:9/15.2;border-radius:14px}.tile-badge{font-size:13px}.media-play{width:39px;height:39px;font-size:16px}.review-card{width:73%;min-height:345px;max-height:385px}.review-card img{max-height:360px}.carousel-controls{margin-top:6px}.section-after{margin-top:12px}.section-after .btn{width:100%}.center-cta .btn{width:100%}.opportunities{grid-template-columns:1fr;gap:26px}.opportunities h3{font-size:22px}.opportunity-item{font-size:14px}.opportunity-card{padding:22px}.simple-list{grid-template-columns:1fr;gap:11px}.simple-card{min-height:0;padding:22px}.icon-grad{margin-bottom:16px}.program-grid{grid-template-columns:1fr}.mentor-section{padding-top:14px}.mentor{grid-template-columns:1fr;padding:20px;gap:15px}.mentor-art{height:160px}.mentor h3{font-size:28px}.price-grid{grid-template-columns:1fr;gap:24px}.price-box{padding:27px}.faq-layout{grid-template-columns:1fr;gap:16px}.end{padding:65px 0 105px}.end h2{font-size:36px}.footer{padding-bottom:102px}.footer-inner{align-items:start;flex-direction:column}.footer .brand-name{font-size:18px}.sticky-mobile{position:fixed;display:flex;justify-content:space-between;align-items:center;z-index:150;bottom:0;left:0;right:0;border-top:1px solid #e1e0ea;background:#fffffff0;backdrop-filter:blur(14px);padding:11px 16px max(11px,env(safe-area-inset-bottom));box-shadow:0 -8px 20px #00000009;gap:10px}.sticky-mobile small{display:block;font-size:10px;color:#8c8b95;margin-bottom:2px}.sticky-mobile strong{font-size:19px;letter-spacing:-.04em}.sticky-mobile .btn{min-height:43px;padding:12px 18px;font-size:12px}.lightbox-image{max-height:78vh}.lightbox-caption{bottom:95px}}
 @media(max-width:390px){.hero h1{font-size:37px}.hero-cta .btn{font-size:12px}.media-tile,.example-rail .media-tile{width:57%}.review-card{width:86%}.brand-name{font-size:19px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.media-tile,.review-card{transition:none}}
-.footer-legal{border-top:1px solid #ffffff14;margin-top:22px;padding-top:16px;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:11px;line-height:1.6;color:#8d8c98}.footer-legal a{text-decoration:underline;text-underline-offset:3px}
 
 /* ───────────── Бенто-раскладка в духе прежнего сайта ─────────────
    Секции - скруглённые карточки с отступом от краёв экрана, факты - плитки разных тонов,
@@ -78,8 +77,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 .faq-layout>div:last-child{display:grid;gap:10px;align-content:start}
 .faq-item{background:#fff;border:1px solid #ececf3;border-bottom:1px solid #ececf3;border-radius:20px;padding:18px 20px;box-shadow:0 6px 18px rgba(55,49,110,.04)}
 
-/* Футер - тёмная карточка */
-.footer{margin:16px var(--gutter) var(--gutter);border-radius:var(--card-radius);padding:30px 0}
 
 /* ПК: шапка-«пилюля» как на прежнем сайте - логотип, меню в сером сегменте с плашкой под пунктом, кнопка справа */
 @media(min-width:761px){
@@ -111,7 +108,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
   .story-section{padding-bottom:16px}
   .opportunity-panel{padding:22px}
   .checks{grid-template-columns:1fr}
-  .footer{padding-bottom:30px;margin-bottom:96px}
 }
 @media(prefers-reduced-motion:reduce){.nav-indicator{transition:none}}
 
@@ -126,3 +122,47 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 .opportunity-panel .opportunity-list{flex:1;grid-auto-rows:1fr;gap:10px}
 .opportunity-item{align-items:center;padding:14px 16px;border-radius:16px;background:#ffffff0a;border:1px solid #ffffff12}
 @media(max-width:760px){.opportunity-panel .opportunity-list{grid-auto-rows:auto}.opportunity-item{padding:12px 14px}}
+
+/* ───────────── Подвал в стиле прежнего сайта ───────────── */
+.site-footer{padding:16px var(--gutter) var(--gutter)}
+.site-footer-card{overflow:hidden;border-radius:40px;background:#131318;color:#fff;padding:72px 48px 0}
+.site-footer-top{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:48px}
+.site-footer-about{display:flex;flex-direction:column;gap:20px}
+.site-footer .brand-icon{width:36px;height:36px;border-radius:10px;font-size:26px}
+.site-footer .brand-name{font-size:17px;letter-spacing:-.05em;color:#fff}
+.site-footer-about p{max-width:42ch;margin:0;font-size:14px;line-height:1.7;color:#ffffff99}
+.site-footer-pills{display:flex;flex-wrap:wrap;gap:10px}
+.site-footer-pills a{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#ffffff14;color:#fff;transition:background-color .2s,transform .2s}
+.site-footer-pills a:hover{background:#ffffff29;transform:translateY(-2px)}
+.site-footer-pills a.is-brand{background:var(--grad)}
+.site-footer-pills a.is-brand:hover{filter:brightness(1.08)}
+.site-footer-pills svg{width:20px;height:20px}
+.site-footer-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px}
+.site-footer-col{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.site-footer-col h3{margin:0 0 2px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#ffffff66}
+.site-footer-link{position:relative;display:inline-flex;align-items:center;font-size:15px;color:#ffffffb3;transition:color .16s}
+.site-footer-link svg{position:absolute;right:calc(100% + 2px);top:50%;width:14px;height:14px;opacity:0;transform:translate(-6px,-50%);transition:opacity .16s,transform .16s}
+.site-footer-link span{transition:transform .16s}
+.site-footer-link:hover{color:#fff}
+.site-footer-link:hover svg{opacity:1;transform:translate(0,-50%)}
+.site-footer-link:hover span{transform:translateX(4px)}
+.site-footer-phone{margin-top:8px;white-space:nowrap;font-size:19px;font-weight:800;letter-spacing:-.02em;color:#fff;transition:color .2s}
+.site-footer-phone:hover{color:#f5b6dc}
+.site-footer-legal{display:flex;flex-wrap:wrap;align-items:center;gap:6px 24px;margin-top:48px;padding-top:24px;border-top:1px solid #ffffff1a;font-size:13px;line-height:1.5;color:#ffffff80}
+.site-footer-legal a{display:inline-flex;align-items:center;min-height:44px;transition:color .2s}
+.site-footer-legal a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.site-footer-legal .nowrap{white-space:nowrap}
+/* Гигантская надпись: обрезана низом карточки, градиент медленно едет при наведении */
+.site-footer-wordmark{margin-top:40px;text-align:center;white-space:nowrap;user-select:none;font-size:clamp(48px,15.4vw,250px);font-weight:900;line-height:.8;letter-spacing:-.06em;background-image:linear-gradient(90deg,#FFC6B8,#FF9CC4,#B987E6,#FF9CC4,#FFC6B8);background-size:200% 100%;background-position:0% 0;-webkit-background-clip:text;background-clip:text;color:transparent;transform:translateY(18%);transition:background-position 1.6s ease-out}
+.site-footer-wordmark:hover{background-position:100% 0}
+@media(max-width:1100px){.site-footer-top{grid-template-columns:1fr;gap:40px}}
+@media(max-width:760px){
+  .site-footer{padding-bottom:88px}
+  .site-footer-card{border-radius:28px;padding:44px 20px 0}
+  .site-footer-cols{grid-template-columns:1fr 1fr}
+  .site-footer-col:last-child{grid-column:1/-1}
+  .site-footer-legal{flex-direction:column;align-items:flex-start;gap:0;margin-top:36px}
+  .site-footer-legal>span{margin-bottom:6px}
+  .site-footer-wordmark{margin-top:28px;font-size:14.6vw;letter-spacing:-.05em}
+}
+@media(prefers-reduced-motion:reduce){.site-footer-wordmark,.site-footer-link svg,.site-footer-link span,.site-footer-pills a{transition:none}}

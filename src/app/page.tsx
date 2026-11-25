@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- картинки уже сжаты в webp под нужный размер, вёрстка как в макете (ai_pro_school_ready.html) */
 import type { Metadata } from "next";
 import { PageEnhancer } from "./PageEnhancer";
-import { LegalRow } from "./LegalRow";
+import { SiteFooter } from "./SiteFooter";
 import { SIGNUP_URL } from "./signup";
 import "./page.css";
 
@@ -381,14 +381,7 @@ export default function Page() {
         </section>
       </main>
 
-      <footer className="footer">
-        <div className="wrap footer-inner">
-          <div className="brand"><span className="brand-icon">A</span><span className="brand-name">AI Pro School</span></div>
-          <div className="footer-note">Результаты обучения индивидуальны. Показанные охваты относятся к отдельным ученическим работам и не являются гарантией. Регистрация и обработка данных осуществляются на действующем сайте AI Pro School.</div>
-          <a href="#top">Наверх ↑</a>
-        </div>
-        <LegalRow />
-      </footer>
+      <SiteFooter />
 
       <div className="sticky-mobile">
         <div><small>Стоимость практикума</small><strong>9 900 ₸</strong></div>
