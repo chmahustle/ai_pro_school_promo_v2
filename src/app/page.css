@@ -152,8 +152,8 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 .site-footer-legal a{display:inline-flex;align-items:center;min-height:44px;transition:color .2s}
 .site-footer-legal a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
 .site-footer-legal .nowrap{white-space:nowrap}
-/* Гигантская надпись: обрезана низом карточки, градиент медленно едет при наведении */
-.site-footer-wordmark{margin-top:40px;text-align:center;white-space:nowrap;user-select:none;font-size:clamp(48px,15.4vw,250px);font-weight:900;line-height:.8;letter-spacing:-.06em;background-image:linear-gradient(90deg,#FFC6B8,#FF9CC4,#B987E6,#FF9CC4,#FFC6B8);background-size:200% 100%;background-position:0% 0;-webkit-background-clip:text;background-clip:text;color:transparent;transform:translateY(18%);transition:background-position 1.6s ease-out}
+/* Гигантская надпись: обрезана низом карточки, градиент страницы (синий → фиолетовый → розовый) медленно едет при наведении */
+.site-footer-wordmark{margin-top:40px;text-align:center;white-space:nowrap;user-select:none;font-size:clamp(48px,15.4vw,250px);font-weight:900;line-height:.8;letter-spacing:-.06em;background-image:linear-gradient(90deg,#0376ec,#8157f4,#f65eaf,#8157f4,#0376ec);background-size:200% 100%;background-position:0% 0;-webkit-background-clip:text;background-clip:text;color:transparent;transform:translateY(18%);transition:background-position 1.6s ease-out}
 .site-footer-wordmark:hover{background-position:100% 0}
 @media(max-width:1100px){.site-footer-top{grid-template-columns:1fr;gap:40px}}
 @media(max-width:760px){
