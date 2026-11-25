@@ -15,11 +15,10 @@
 
 /* ───────────── Бенто-раскладка в духе прежнего сайта ─────────────
    Секции - скруглённые карточки с отступом от краёв экрана, факты - плитки разных тонов,
-   на фоне еле заметная сетка, на ПК - шапка-«пилюля» с сегментированным меню. Тексты, кнопки и цвета - из макета. */
+   еле заметная сетка внутри крупных карточек, на ПК - шапка-«пилюля» с сегментированным меню. Тексты, кнопки и цвета - из макета. */
 :root{--lavender:#efeaff;--card-radius:32px;--gutter:16px}
 
-/* Еле заметная сетка на фоне всей страницы */
-body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(to right,rgba(20,18,31,.045) 1px,transparent 1px),linear-gradient(to bottom,rgba(20,18,31,.045) 1px,transparent 1px);background-size:56px 56px}
+/* Фон страницы однотонный; сетка - только внутри крупных карточек */
 /* Сетка поярче внутри крупных карточек (hero, цена, финальный призыв), растворяется к краям */
 .bg-grid{position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(to right,rgba(20,18,31,.07) 1px,transparent 1px),linear-gradient(to bottom,rgba(20,18,31,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 80% 75% at 50% 45%,#000 35%,transparent 100%);mask-image:radial-gradient(ellipse 80% 75% at 50% 45%,#000 35%,transparent 100%)}
 
