@@ -166,3 +166,47 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
   .site-footer-wordmark{margin-top:28px;font-size:14.6vw;letter-spacing:-.05em}
 }
 @media(prefers-reduced-motion:reduce){.site-footer-wordmark,.site-footer-link svg,.site-footer-link span,.site-footer-pills a{transition:none}}
+
+/* ───────────── Первый экран: спокойная структура (тексты те же) ─────────────
+   Слева - метка, заголовок ровными строками, абзац, галочки без рамок, плашка «цена + кнопка», сноска.
+   Справа - бенто-плитка с примерами роликов веером. */
+.hero{padding:56px 0}
+.hero-layout{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:48px;align-items:stretch}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:8px 0}
+.hero .eyebrow{align-self:flex-start}
+.hero h1{font-size:clamp(38px,3.5vw,50px);line-height:1.08;letter-spacing:-.06em;margin:22px 0 18px;max-width:620px;text-wrap:balance}
+.hero-lead{font-size:16px;line-height:1.65;max-width:540px;margin-bottom:22px}
+.hero-chips{gap:8px 18px;margin-bottom:30px}
+.hero .chip{padding:0;border:0;background:none;font-size:13px;font-weight:700;color:#3f3f4a;gap:8px}
+.hero .chip span{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--grad);color:#fff;font-size:11px}
+/* Цена и кнопка - одна белая плашка: цена слева, кнопка справа */
+.hero-cta{align-self:flex-start;flex-wrap:nowrap;gap:22px;padding:8px 8px 8px 26px;border-radius:100px;background:#fff;border:1px solid #ebe8f4;box-shadow:0 14px 40px rgba(55,49,110,.09)}
+.hero-price{order:-1;font-size:28px;line-height:1}
+.hero-price small{font-size:11px;margin-bottom:6px}
+.hero-cta .btn{min-height:58px}
+.hero-disclaimer{max-width:500px;margin-top:16px}
+/* Плитка с примерами роликов */
+.hero-art{min-height:520px;max-width:none;margin:0;border-radius:28px;background:radial-gradient(ellipse 70% 60% at 50% 45%,#ffffffd9,transparent 75%),linear-gradient(150deg,#eaf2ff 0%,#f1eaff 50%,#ffe9f5 100%);border:1px solid #ffffffb3;box-shadow:inset 0 0 0 1px #ece8f7,0 18px 50px rgba(55,49,110,.08)}
+.hero-art .halo{inset:70px 40px 40px}
+.hero-card-1{width:42%;height:390px;left:29%;top:58px;transform:rotate(0deg)}
+.hero-card-2{width:34%;height:300px;left:5%;top:118px;transform:rotate(-8deg)}
+.hero-card-3{width:34%;height:300px;left:auto;right:5%;bottom:auto;top:118px;transform:rotate(8deg)}
+.art-bubble.top{top:22px;right:22px}
+.art-bubble.bottom{left:50%;bottom:22px;transform:translateX(-50%);white-space:nowrap}
+@media(max-width:1100px){.hero-layout{gap:28px}.hero-art{transform:none;min-height:480px}.hero-card-1{height:350px}.hero-card-2,.hero-card-3{height:270px}}
+@media(max-width:760px){
+  .hero{padding:32px 0 20px}
+  .hero .eyebrow{font-size:10px;letter-spacing:.05em;padding:8px 12px;gap:7px}
+  .hero h1{font-size:clamp(32px,8.6vw,40px);margin:16px 0 14px}
+  .hero-lead{font-size:15px}
+  .hero-chips{gap:8px 14px;margin-bottom:22px}
+  .hero .chip{font-size:12px}
+  .hero-cta{align-self:stretch;flex-direction:column;align-items:stretch;gap:12px;padding:16px;border-radius:24px}
+  .hero-price{font-size:24px;padding-left:4px}
+  .hero-cta .btn{width:100%}
+  .hero-art{height:400px;min-height:0;margin-top:24px;max-width:none}
+  .hero-card-1{height:280px;top:44px}
+  .hero-card-2,.hero-card-3{height:215px;top:92px}
+  .art-bubble.top{top:12px;right:12px}
+  .art-bubble.bottom{bottom:12px}
+}

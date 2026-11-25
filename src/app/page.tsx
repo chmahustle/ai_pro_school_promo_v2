@@ -120,7 +120,7 @@ export default function Page() {
             <div className="hero-copy">
               <div className="eyebrow"><span className="eyebrow-dot" />Практический курс · с нуля · онлайн</div>
               <h1>
-                Освойте <span className="gradient-text">AI-видео</span> с телефона и узнайте, как получать доход <span className="money gradient-text">до 300 000 ₸</span> в месяц
+                Освойте <span className="gradient-text">AI-видео</span> с&nbsp;телефона и узнайте, как получать доход <span className="money gradient-text">до 300 000 ₸</span> в месяц
               </h1>
               <p className="hero-lead">
                 За <strong>2 практических эфира</strong> создадите свой первый AI-ролик, освоите понятные инструменты и узнаете, где искать потенциальных заказчиков. <strong>Без опыта и сложного монтажа.</strong>
