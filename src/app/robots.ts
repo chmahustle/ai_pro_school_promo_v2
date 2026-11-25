@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
   // Тестовые и прочие не-боевые домены закрыты целиком
   if (!IS_INDEXABLE) return { rules: [{ userAgent: "*", disallow: "/" }] };
   return {
-    rules: [{ userAgent: "*", allow: "/", disallow: ["/thanks", "/api/"] }],
+    rules: [{ userAgent: "*", allow: "/", disallow: ["/api/"] }],
     sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

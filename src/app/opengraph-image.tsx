@@ -1,14 +1,13 @@
 import { renderOg, OG_SIZE, OG_CONTENT_TYPE } from "@/lib/og";
-import { site } from "@/lib/site";
 
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
-export const alt = `${site.name} - ${site.tagline}`;
+export const alt = "Практикум по AI-видео — AI Pro School";
 
 export default function Image() {
   return renderOg({
-    title: "Учим зарабатывать на ИИ. Без техобразования.",
-    subtitle: "ИИ-контент, вайб-кодинг, автоматизация - для новичков, фрилансеров, бизнеса и специалистов",
-    eyebrow: site.tagline,
+    title: "Практикум по AI-видео с телефона",
+    subtitle: "2 эфира, 3 дня обратной связи, доступ к записям 14 дней. участие — 9 900 тенге",
+    eyebrow: "Практический курс · с нуля · онлайн",
   });
 }

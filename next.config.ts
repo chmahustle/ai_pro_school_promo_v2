@@ -32,10 +32,11 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // Legacy URLs from the current Tilda site
-      { source: "/ai2026", destination: "/courses/ai-creator", permanent: true },
-      { source: "/prakticum", destination: "/courses/practicum", permanent: true },
-      { source: "/courses/ai2026", destination: "/courses/ai-creator", permanent: true },
+      // Сайт - одна страница (лендинг практикума): прежние адреса ведут на главную.
+      // Временные (307), чтобы браузеры не запомнили их навсегда, если страницы вернутся.
+      ...["/ai2026", "/prakticum", "/courses", "/courses/:path*", "/for/:path*", "/reviews", "/about", "/contacts", "/blog", "/thanks", "/thanks/:path*"].map(
+        (source) => ({ source, destination: "/", permanent: false }),
+      ),
       // Юридические документы лежат в Google Docs; короткие адреса на нашем домене (на /public ссылается п. 13.2 оферты).
       // Проект не static export, поэтому обычный серверный редирект; временный, чтобы адрес документа можно было сменить
       { source: legalDocs.privacy.sitePath, destination: legalDocs.privacy.docHref, permanent: false },
